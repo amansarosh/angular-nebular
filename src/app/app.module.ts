@@ -19,6 +19,7 @@ import { ListComponent } from './list/list.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { InputComponent } from './input/input.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { InputComponent } from './input/input.component';
     SidebarComponent,
     TabsComponent,
     InputComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,

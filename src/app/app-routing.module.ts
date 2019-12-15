@@ -8,6 +8,7 @@ import { ListComponent } from './list/list.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { InputComponent } from './input/input.component';
+import { ButtonComponent } from './button/button.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'sidebar', component: SidebarComponent },
   { path: 'tabs', component: TabsComponent },
   { path: 'input', component: InputComponent },
+  { path: 'button', component: ButtonComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,139 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+        <!-- Insert header here -->
+        <h1>Button</h1>
+        <div class="homebuttons">
+            <a href="/home" nbButton>Home</a>
+            <a href="/cards" nbButton>Cards</a>
+            <a href="/stepper" nbButton>stepper</a>
+            <a href="/accordion" nbButton>accordion</a>
+            <a href="/list" nbButton>List</a>
+            <a href="/sidebar" nbButton>Sidebar</a>
+            <a href="/tabs" nbButton>Tabs</a>
+            <a href="/input" nbButton>Input</a>
+
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+
+        <!----------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Button</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <button nbButton>Active</button>
+                <button nbButton disabled>Disabled</button>
+            </nb-card-body>
+        </nb-card>
+
+        <!----------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-header>Button Colors</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <button nbButton status="basic">basic</button>
+                <button nbButton status="primary">Primary</button>
+                <button nbButton status="success">Success</button>
+                <button nbButton status="info">Info</button>
+                <button nbButton status="warning">Warning</button>
+                <button nbButton status="danger">Danger</button>
+                <div class="control-status-example">
+                    <button nbButton status="control">Control</button>
+                </div>
+            </nb-card-body>
+        </nb-card>
+
+
+
+        <!----------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-header>Button Sizes</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <button nbButton size="tiny">tiny</button>
+                <button nbButton size="small">small</button>
+                <button nbButton size="medium">medium</button>
+                <button nbButton size="large">large</button>
+                <button nbButton size="giant">giant</button>
+            </nb-card-body>
+        </nb-card>
+
+
+        <!----------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Button Outline</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <button nbButton outline status="primary">Primary</button>
+                <button nbButton outline status="success">Success</button>
+                <button nbButton outline status="info">Info</button>
+                <button nbButton outline status="warning">Warning</button>
+                <button nbButton outline status="danger">Danger</button>
+            </nb-card-body>
+        </nb-card>
+
+        <!----------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Button Hero</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <button nbButton hero status="primary">Primary</button>
+                <button nbButton hero status="success">Success</button>
+                <button nbButton hero status="info">Info</button>
+                <button nbButton hero status="warning">Warning</button>
+                <button nbButton hero status="danger">Danger</button>
+            </nb-card-body>
+        </nb-card>
+
+
+        <!----------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Button Shapes</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <button nbButton shape="rectangle" status="primary">Rectangle Hero</button>
+                <button nbButton shape="semi-round" status="info">Semi-round Outline</button>
+                <button nbButton shape="round" size="small" status="success">Round Small</button>
+            </nb-card-body>
+        </nb-card>
+
+        <!----------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Button Elements</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <button (click)="onClick()" nbButton>Button</button>
+                <input (click)="onClick()" nbButton type="submit" value="Input Submit" />
+                <input (click)="onClick()" nbButton type="button" value="Input Button" />
+                <a (click)="onClick()" href="#" nbButton>Link</a>
+            </nb-card-body>
+        </nb-card>
+
+        <!----------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Button Full Width</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <button nbButton fullWidth status="primary">Primary</button>
+                <button nbButton fullWidth status="success">Success</button>
+                <button nbButton fullWidth status="info">Info</button>
+                <button nbButton fullWidth status="warning">Warning</button>
+                <button nbButton fullWidth status="danger">Danger</button>
+            </nb-card-body>
+        </nb-card>
+        <!----------------------------------------------------------------------------------------------------------->
+
+
+
+        <!----------------------------------------------------------------------------------------------------------->
+
+
+
+
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <!-- Insert footer here -->
+    </nb-layout-footer>
+
+</nb-layout>
