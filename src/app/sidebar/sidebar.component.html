@@ -1,0 +1,29 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+        <!-- Insert header here -->
+        <h1>Home</h1>
+        <div class="homebuttons">
+            <a (click)="onClick()" href="/cards" nbButton>Cards</a>
+            <a (click)="onClick()" href="/stepper" nbButton>stepper</a>
+            <a (click)="onClick()" href="/accordion" nbButton>accordion</a>
+            <a (click)="onClick()" href="/list" nbButton>List</a>
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+
+        
+        <nb-layout>
+            <nb-sidebar state="compacted"></nb-sidebar>
+            <nb-layout-column class="colored-column-primary">Layout Content</nb-layout-column>
+        </nb-layout>
+
+
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <!-- Insert footer here -->
+    </nb-layout-footer>
+
+</nb-layout>

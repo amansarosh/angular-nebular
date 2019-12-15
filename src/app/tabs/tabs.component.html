@@ -1,0 +1,136 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+        <!-- Insert header here -->
+        <h1>Home</h1>
+        <div class="homebuttons">
+            <a (click)="onClick()" href="/cards" nbButton>Cards</a>
+            <a (click)="onClick()" href="/stepper" nbButton>stepper</a>
+            <a (click)="onClick()" href="/accordion" nbButton>accordion</a>
+            <a (click)="onClick()" href="/list" nbButton>List</a>
+            <a (click)="onClick()" href="/sidebar" nbButton>Sidebar</a>
+            <a (click)="onClick()" href="/tabs" nbButton>Tabs</a>
+
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+
+        <!---------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-body>
+
+                <nb-tabset>
+                    <nb-tab tabTitle="Users">
+                        <p>List of <strong>users</strong>.</p>
+                    </nb-tab>
+                    <nb-tab tabTitle="Orders">
+                        <p>List of <strong>orders</strong>.</p>
+                    </nb-tab>
+                    <nb-tab tabTitle="Transactions" disabled>
+                        <p>List of <strong>transactions</strong>.</p>
+                    </nb-tab>
+                </nb-tabset>
+
+            </nb-card-body>
+        </nb-card>
+        <!---------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-body>
+
+                <nb-tabset>
+                    <nb-tab tabTitle="Users" badgeText="99+" badgeStatus="danger">
+                        <p>List of <strong>users</strong>.</p>
+                    </nb-tab>
+                    <nb-tab tabTitle="Orders" badgeText="12" badgePosition="bottom right" badgeStatus="warning">
+                        <p>List of <strong>orders</strong>.</p>
+                    </nb-tab>
+                    <nb-tab tabTitle="Transactions" badgeText="new" badgePosition="top right" badgeStatus="success">
+                        <p>List of <strong>transactions</strong>.</p>
+                    </nb-tab>
+                </nb-tabset>
+
+            </nb-card-body>
+        </nb-card>
+
+        <!---------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-body>
+
+                <nb-tabset fullWidth>
+                    <nb-tab tabIcon="person-outline">
+                        <p>List of <strong>users</strong>.</p>
+                    </nb-tab>
+                    <nb-tab tabIcon="bell-outline">
+                        <p>List of <strong>orders</strong>.</p>
+                    </nb-tab>
+                    <nb-tab tabIcon="email-outline">
+                        <p>List of <strong>transactions</strong>.</p>
+                    </nb-tab>
+                </nb-tabset>
+
+            </nb-card-body>
+        </nb-card>
+
+        <nb-card>
+            <nb-card-body>
+
+                <nb-tabset fullWidth>
+                    <nb-tab tabTitle="Users" tabIcon="person-outline" responsive>
+                        <p>List of <strong>users</strong>.</p>
+                    </nb-tab>
+                    <nb-tab tabTitle="Orders" tabIcon="bell-outline" responsive>
+                        <p>List of <strong>orders</strong>.</p>
+                    </nb-tab>
+                    <nb-tab tabTitle="Transactions" tabIcon="email-outline" responsive>
+                        <p>List of <strong>transactions</strong>.</p>
+                    </nb-tab>
+                </nb-tabset>
+
+            </nb-card-body>
+        </nb-card>
+        <!---------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-body>
+
+                <nb-actions size="medium">
+                    <nb-action icon="search-outline"></nb-action>
+                    <nb-action icon="power-outline"></nb-action>
+                    <nb-action icon="person-outline"></nb-action>
+                    <nb-action icon="home-outline"></nb-action>
+                    <nb-action [icon]="disabledIconConfig" disabled></nb-action>
+                    <nb-action>
+                        Custom Action
+                    </nb-action>
+                </nb-actions>
+
+            </nb-card-body>
+        </nb-card>
+
+        <!---------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-body>
+
+                <nb-actions size="medium">
+                    <nb-action icon="search-outline" badgeText="99+" badgeStatus="danger">
+                    </nb-action>
+                    <nb-action icon="power-outline" badgeText="12" badgePosition="bottom right" badgeStatus="warning">
+                    </nb-action>
+                    <nb-action icon="person-outline" badgeText="M" badgePosition="top right" badgeStatus="info">
+                    </nb-action>
+                </nb-actions>
+
+            </nb-card-body>
+        </nb-card>
+        <!---------------------------------------------------------------------------------------------------------->
+
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <!-- Insert footer here -->
+    </nb-layout-footer>
+
+</nb-layout>

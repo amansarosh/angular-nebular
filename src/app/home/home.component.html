@@ -1,0 +1,35 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+        <!-- Insert header here -->
+        <h1>Home</h1>
+        <div class="homebuttons">
+            <a (click)="onClick()" href="/cards" nbButton>Cards</a>
+            <a (click)="onClick()" href="/stepper" nbButton>stepper</a>
+            <a (click)="onClick()" href="/accordion" nbButton>accordion</a>
+            <a (click)="onClick()" href="/list" nbButton>List</a>
+            <a (click)="onClick()" href="/sidebar" nbButton>Sidebar</a>
+            <a (click)="onClick()" href="/tabs" nbButton>Tabs</a>
+
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+
+
+        <nb-card>
+            <nb-card-body>
+                A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+                Originally, nebula was a name for any diffuse astronomical object,
+                including galaxies beyond the Milky Way.
+            </nb-card-body>
+        </nb-card>
+
+
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <!-- Insert footer here -->
+    </nb-layout-footer>
+
+</nb-layout>
