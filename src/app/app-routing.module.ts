@@ -7,6 +7,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ListComponent } from './list/list.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { InputComponent } from './input/input.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'list', component: ListComponent },
   { path: 'sidebar', component: SidebarComponent },
   { path: 'tabs', component: TabsComponent },
+  { path: 'input', component: InputComponent },
 ];
 
 @NgModule({

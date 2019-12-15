@@ -18,6 +18,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ListComponent } from './list/list.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { TabsComponent } from './tabs/tabs.component';
     ListComponent,
     SidebarComponent,
     TabsComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
