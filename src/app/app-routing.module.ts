@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'tabs', component: TabsComponent },
   { path: 'input', component: InputComponent },
   { path: 'button', component: ButtonComponent },
+  { path: 'checkbox', component: CheckboxComponent },
 ];
 
 @NgModule({

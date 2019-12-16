@@ -7,7 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   NbThemeModule, NbLayoutModule, NbCardModule, NbStepperModule, NbAccordionModule, NbListModule,
   NbTabsetModule, NbActionsModule, NbInputModule, NbButtonModule, NbRadioModule, NbSelectModule,
-  NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, 
+  NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, NbCheckboxModule,
+  NbToggleModule
 } from '@nebular/theme';
 
 import { NbEvaIconsModule } from '@nebular/eva-icons';
@@ -20,6 +21,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { ButtonComponent } from './button/button.component';
     TabsComponent,
     InputComponent,
     ButtonComponent,
+    CheckboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,9 @@ import { ButtonComponent } from './button/button.component';
     NbPopoverModule,
     NbContextMenuModule,
     NbTooltipModule,
-    NbSidebarModule.forRoot()
+    NbSidebarModule.forRoot(),
+    NbCheckboxModule,
+    NbToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
