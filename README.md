@@ -1,6 +1,11 @@
 # Nebula
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+This project was styled with [Nebular](https://akveo.github.io/nebular/) version 4.6.0.
+
+## What is Nebular
+
+Nebular is styling with customizable UI Kit, Auth & Security with over 35+ Angular Components, 4 Visual Themes and 3 Auth Strategies.
 
 ## Development server
 
