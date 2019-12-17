@@ -13,6 +13,8 @@
             <a href="/tabs" nbButton>Tabs</a>
             <a href="/input" nbButton>Input</a>
             <a href="/checkbox" nbButton>Checkbox</a>
+            <a href="/radio" nbButton>Radio</a>
+            <a href="/select" nbButton>Select</a>
 
         </div>
     </nb-layout-header>
@@ -123,10 +125,52 @@
             </nb-card-body>
         </nb-card>
         <!----------------------------------------------------------------------------------------------------------->
+        <button nbButton nbPopover="Bottom Popover!" nbPopoverPlacement="bottom">
+            Bottom
+        </button>
 
+        <button nbButton nbPopover="Right Popover!" nbPopoverPlacement="right">
+            Right
+        </button>
 
+        <button nbButton nbPopover="Left Popover!" nbPopoverPlacement="left">
+            Left
+        </button>
+
+        <button nbButton nbPopover="End Popover!" nbPopoverPlacement="end">
+            End
+        </button>
+
+        <button nbButton nbPopover="Start Popover!" nbPopoverPlacement="start">
+            Start
+        </button>
+
+        <button nbButton nbPopover="Top Popover!" nbPopoverPlacement="top">
+            Top
+        </button>
 
         <!----------------------------------------------------------------------------------------------------------->
+
+        <button nbButton nbPopover="Click Mode" nbPopoverTrigger="click" nbPopoverPlacement="bottom">
+            Click Mode
+        </button>
+
+        <button nbButton nbPopover="Hint Mode" nbPopoverTrigger="hint" nbPopoverPlacement="bottom">
+            Hint Mode
+        </button>
+
+        <button nbButton nbPopover="Hover Mode" nbPopoverTrigger="hover" nbPopoverPlacement="bottom">
+            Hover Mode
+        </button>
+        <!----------------------------------------------------------------------------------------------------------->
+        <input placeholder="Enter your username" nbInput nbPopover="Username is already taken" nbPopoverTrigger="noop">
+        
+        <div>
+            <button nbButton size="small" status="success" (click)="open()">Open Popover</button>
+            <button nbButton size="small" status="danger" (click)="close()">Close Popover</button>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------->
+
 
 
 

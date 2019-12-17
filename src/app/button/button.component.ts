@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NbPopoverDirective } from '@nebular/theme';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss']
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent {
 
-  constructor() { }
+  @ViewChild(NbPopoverDirective, { static: false }) popover: NbPopoverDirective;
 
-  ngOnInit() {
+  open() {
+    this.popover.show();
   }
 
+  close() {
+    this.popover.hide();
+  }
 }

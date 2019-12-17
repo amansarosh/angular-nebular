@@ -1,0 +1,110 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+        <!-- Insert header here -->
+        <h1>Radio</h1>
+        <div class="homebuttons">
+            <a href="/cards" nbButton>Cards</a>
+            <a href="/stepper" nbButton>stepper</a>
+            <a href="/accordion" nbButton>accordion</a>
+            <a href="/list" nbButton>List</a>
+            <a href="/sidebar" nbButton>Sidebar</a>
+            <a href="/tabs" nbButton>Tabs</a>
+            <a href="/input" nbButton>Input</a>
+            <a href="/button" nbButton>Button</a>
+            <a href="/checkbox" nbButton>Checkbox</a>
+            <a href="/select" nbButton>Select</a>
+
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+
+
+        <nb-card>
+            <nb-card-header>Selected Option: {{ option }}</nb-card-header>
+            <nb-card-body>
+
+                <nb-radio-group [(ngModel)]="option" status="basic">
+                    <nb-radio *ngFor="let option of options" [value]="option.value" [disabled]="option.disabled">
+                        {{ option.label }}
+
+                    </nb-radio>
+                </nb-radio-group>
+
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Basic</nb-card-header>
+            <nb-card-body>
+
+                <nb-radio-group status="primary">
+                    <nb-radio *ngFor="let option of options" [value]="option.value">
+                        {{ option.label }}
+
+                    </nb-radio>
+                </nb-radio-group>
+
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Success</nb-card-header>
+            <nb-card-body>
+
+                <nb-radio-group status="success">
+                    <nb-radio *ngFor="let option of options" [value]="option.value">
+                        {{ option.label }}
+
+                    </nb-radio>
+                </nb-radio-group>
+
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Warning</nb-card-header>
+            <nb-card-body>
+
+                <nb-radio-group status="warning">
+                    <nb-radio *ngFor="let option of options" [value]="option.value">
+                        {{ option.label }}
+
+                    </nb-radio>
+                </nb-radio-group>
+
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Danger</nb-card-header>
+            <nb-card-body>
+
+                <nb-radio-group status="danger">
+                    <nb-radio *ngFor="let option of options" [value]="option.value">
+                        {{ option.label }}
+
+                    </nb-radio>
+                </nb-radio-group>
+
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <!-- Insert footer here -->
+    </nb-layout-footer>
+
+</nb-layout>

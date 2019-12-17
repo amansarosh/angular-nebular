@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,7 +9,7 @@ import {
   NbThemeModule, NbLayoutModule, NbCardModule, NbStepperModule, NbAccordionModule, NbListModule,
   NbTabsetModule, NbActionsModule, NbInputModule, NbButtonModule, NbRadioModule, NbSelectModule,
   NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, NbCheckboxModule,
-  NbToggleModule
+  NbToggleModule,
 } from '@nebular/theme';
 
 import { NbEvaIconsModule } from '@nebular/eva-icons';
@@ -22,6 +23,8 @@ import { TabsComponent } from './tabs/tabs.component';
 import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { RadioComponent } from './radio/radio.component';
+import { SelectComponent } from './select/select.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +39,14 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     InputComponent,
     ButtonComponent,
     CheckboxComponent,
+    RadioComponent,
+    SelectComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
     NbEvaIconsModule,
@@ -59,7 +65,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     NbTooltipModule,
     NbSidebarModule.forRoot(),
     NbCheckboxModule,
-    NbToggleModule
+    NbToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,8 @@ import { TabsComponent } from './tabs/tabs.component';
 import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { RadioComponent } from './radio/radio.component';
+import { SelectComponent } from './select/select.component';
 
 
 const routes: Routes = [
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path: 'input', component: InputComponent },
   { path: 'button', component: ButtonComponent },
   { path: 'checkbox', component: CheckboxComponent },
+  { path: 'radio', component: RadioComponent },
+  { path: 'select', component: SelectComponent },
 ];
 
 @NgModule({
