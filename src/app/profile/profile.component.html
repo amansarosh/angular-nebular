@@ -1,0 +1,59 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+        <!-- Insert header here -->
+        <h1>Profile</h1>
+        <div class="navbarprofile">
+            <a href="/cards" nbButton>Cards</a>
+            <a href="/stepper" nbButton>stepper</a>
+            <a href="/accordion" nbButton>accordion</a>
+            <a href="/list" nbButton>List</a>
+            <a href="/sidebar" nbButton>Sidebar</a>
+            <a href="/tabs" nbButton>Tabs</a>
+            <a href="/input" nbButton>Input</a>
+            <a href="/button" nbButton>Button</a>
+            <a href="/checkbox" nbButton>Checkbox</a>
+            <a href="/radio" nbButton>Radio</a>
+            <a href="/select" nbButton>Select</a>
+
+
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-layout-header>
+            <nb-user name="Aman Sarosh" title="Full-Stack Developer" [nbContextMenu]="items"
+                nbContextMenuTag="my-context-menu">
+            </nb-user>
+        </nb-layout-header>
+        <!------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <button nbButton [nbContextMenu]="items" nbContextMenuTrigger="click">
+                Click Mode
+            </button>
+
+            <button nbButton [nbContextMenu]="items" nbContextMenuTrigger="focus">
+                Focus (Tab) Mode
+            </button>
+
+            <button nbButton [nbContextMenu]="items" nbContextMenuTrigger="hover">
+                Hover Mode
+            </button>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+
+
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <!-- Insert footer here -->
+    </nb-layout-footer>
+
+</nb-layout>

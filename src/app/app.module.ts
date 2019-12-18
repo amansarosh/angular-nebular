@@ -9,7 +9,7 @@ import {
   NbThemeModule, NbLayoutModule, NbCardModule, NbStepperModule, NbAccordionModule, NbListModule,
   NbTabsetModule, NbActionsModule, NbInputModule, NbButtonModule, NbRadioModule, NbSelectModule,
   NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, NbCheckboxModule,
-  NbToggleModule,
+  NbToggleModule, NbMenuModule, NbUserModule, NbDialogModule, NbDialogService, NbDialogRef 
 } from '@nebular/theme';
 
 import { NbEvaIconsModule } from '@nebular/eva-icons';
@@ -25,6 +25,7 @@ import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadioComponent } from './radio/radio.component';
 import { SelectComponent } from './select/select.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { SelectComponent } from './select/select.component';
     CheckboxComponent,
     RadioComponent,
     SelectComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,8 +66,14 @@ import { SelectComponent } from './select/select.component';
     NbContextMenuModule,
     NbTooltipModule,
     NbSidebarModule.forRoot(),
+    NbMenuModule.forRoot(),
+    NbDialogModule.forRoot(),
     NbCheckboxModule,
     NbToggleModule,
+    NbMenuModule,
+    NbUserModule,
+    NbDialogService, 
+    NbDialogRef 
   ],
   providers: [],
   bootstrap: [AppComponent]
