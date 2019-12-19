@@ -9,7 +9,7 @@ import {
   NbThemeModule, NbLayoutModule, NbCardModule, NbStepperModule, NbAccordionModule, NbListModule,
   NbTabsetModule, NbActionsModule, NbInputModule, NbButtonModule, NbRadioModule, NbSelectModule,
   NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, NbCheckboxModule,
-  NbToggleModule, NbMenuModule, NbUserModule, NbDialogModule, NbDialogService, NbDialogRef 
+  NbToggleModule, NbMenuModule, NbUserModule,
 } from '@nebular/theme';
 
 import { NbEvaIconsModule } from '@nebular/eva-icons';
@@ -73,7 +73,7 @@ import { ProfileComponent } from './profile/profile.component';
     NbMenuModule,
     NbUserModule,
     NbDialogService, 
-    NbDialogRef 
+    NbDialogRef
   ],
   providers: [],
   bootstrap: [AppComponent]
