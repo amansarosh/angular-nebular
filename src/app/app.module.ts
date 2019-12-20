@@ -26,6 +26,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadioComponent } from './radio/radio.component';
 import { SelectComponent } from './select/select.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ProfileComponent } from './profile/profile.component';
     RadioComponent,
     SelectComponent,
     ProfileComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,13 +69,10 @@ import { ProfileComponent } from './profile/profile.component';
     NbTooltipModule,
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
-    NbDialogModule.forRoot(),
     NbCheckboxModule,
     NbToggleModule,
     NbMenuModule,
     NbUserModule,
-    NbDialogService, 
-    NbDialogRef
   ],
   providers: [],
   bootstrap: [AppComponent]

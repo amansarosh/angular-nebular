@@ -13,6 +13,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadioComponent } from './radio/radio.component';
 import { SelectComponent } from './select/select.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ErrorComponent } from './error/error.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'radio', component: RadioComponent },
   { path: 'select', component: SelectComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: '**', component: ErrorComponent }
 ];
 
 @NgModule({
