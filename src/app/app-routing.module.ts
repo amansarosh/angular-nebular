@@ -14,6 +14,8 @@ import { RadioComponent } from './radio/radio.component';
 import { SelectComponent } from './select/select.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ErrorComponent } from './error/error.component';
+import { ToastComponent } from './toast/toast.component';
+import { SearchComponent } from './search/search.component';
 
 
 const routes: Routes = [
@@ -30,6 +32,8 @@ const routes: Routes = [
   { path: 'radio', component: RadioComponent },
   { path: 'select', component: SelectComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'toast', component: ToastComponent },
+  { path: 'search', component: SearchComponent },
   { path: '**', component: ErrorComponent }
 ];
 

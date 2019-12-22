@@ -25,4 +25,6 @@ export class ProfileComponent implements OnInit {
       )
       .subscribe(title => this.window.alert(`${title} was clicked!`));
   }
+
+  base64image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png'
 }

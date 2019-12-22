@@ -16,6 +16,8 @@
             <a href="/radio" nbButton>Radio</a>
             <a href="/select" nbButton>Select</a>
             <a href="/profile" nbButton>Profile</a>
+            <a href="/toast" nbButton>Toastr</a>
+            <a href="/search" nbButton>Search</a>
 
         </div>
     </nb-layout-header>
@@ -151,18 +153,80 @@
         </button>
 
         <!----------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-header>Button Popover</nb-card-header>
+            <button nbButton nbPopover="Click Mode" nbPopoverTrigger="click" nbPopoverPlacement="bottom">
+                Click Mode
+            </button>
 
-        <button nbButton nbPopover="Click Mode" nbPopoverTrigger="click" nbPopoverPlacement="bottom">
-            Click Mode
-        </button>
+            <button nbButton nbPopover="Hint Mode" nbPopoverTrigger="hint" nbPopoverPlacement="bottom">
+                Hint Mode
+            </button>
 
-        <button nbButton nbPopover="Hint Mode" nbPopoverTrigger="hint" nbPopoverPlacement="bottom">
-            Hint Mode
-        </button>
+            <button nbButton nbPopover="Hover Mode" nbPopoverTrigger="hover" nbPopoverPlacement="bottom">
+                Hover Mode
+            </button>
+        </nb-card>
+        <!----------------------------------------------------------------------------------------------------------->
 
-        <button nbButton nbPopover="Hover Mode" nbPopoverTrigger="hover" nbPopoverPlacement="bottom">
-            Hover Mode
-        </button>
+        <nb-card>
+            <nb-card-header>Button Tooltip</nb-card-header>
+            <nb-card-body>
+                <button nbTooltip="This is a tooltip" nbTooltipStatus="primary" nbButton status="primary">Show
+                    Tooltip</button>
+                <button nbTooltip="This is a tooltip" nbTooltipIcon="home-outline" nbButton>Show Tooltip</button>
+
+                <button nbTooltip nbTooltipIcon="alert-triangle-outline" nbTooltipStatus="danger" nbButton>Show
+                    Tooltip</button>
+
+                <button nbTooltip [nbTooltipIcon]="{icon: 'alert-triangle-outline', pack: 'eva'}"
+                    nbTooltipStatus="danger" nbButton>
+                    Show Tooltip
+                </button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="top" nbButton>Top</button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="right" nbButton>Right</button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="end" nbButton>End</button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="bottom" nbButton>Bottom</button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="left" nbButton>Left</button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="start" nbButton>Start</button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="top" nbButton status="basic">
+                    Default
+                </button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="top" nbTooltipStatus="basic" nbButton
+                    status="basic">
+                    Basic
+                </button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="top" nbTooltipStatus="primary" nbButton
+                    status="primary">
+                    Primary
+                </button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="top" nbTooltipStatus="success" nbButton
+                    status="success">
+                    Success
+                </button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="top" nbTooltipStatus="danger" nbButton
+                    status="danger">
+                    Danger
+                </button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="top" nbTooltipStatus="info" nbButton
+                    status="info">
+                    Info
+                </button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="top" nbTooltipStatus="warning" nbButton
+                    status="warning">
+                    Warning
+                </button>
+                <button nbTooltip="This is a tooltip" nbTooltipPlacement="top" nbTooltipStatus="control" nbButton
+                    status="control">
+                    Control
+                </button>
+            </nb-card-body>
+        </nb-card>
+
+        <!----------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
         <!----------------------------------------------------------------------------------------------------------->
 
 

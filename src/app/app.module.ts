@@ -9,7 +9,7 @@ import {
   NbThemeModule, NbLayoutModule, NbCardModule, NbStepperModule, NbAccordionModule, NbListModule,
   NbTabsetModule, NbActionsModule, NbInputModule, NbButtonModule, NbRadioModule, NbSelectModule,
   NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, NbCheckboxModule,
-  NbToggleModule, NbMenuModule, NbUserModule,
+  NbToggleModule, NbMenuModule, NbUserModule, NbToastrModule, NbWindowModule, NbSearchModule
 } from '@nebular/theme';
 
 import { NbEvaIconsModule } from '@nebular/eva-icons';
@@ -27,6 +27,8 @@ import { RadioComponent } from './radio/radio.component';
 import { SelectComponent } from './select/select.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ErrorComponent } from './error/error.component';
+import { ToastComponent } from './toast/toast.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { ErrorComponent } from './error/error.component';
     SelectComponent,
     ProfileComponent,
     ErrorComponent,
+    ToastComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,10 +73,13 @@ import { ErrorComponent } from './error/error.component';
     NbTooltipModule,
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
+    NbToastrModule.forRoot(),
+    NbWindowModule.forRoot(),
     NbCheckboxModule,
     NbToggleModule,
     NbMenuModule,
     NbUserModule,
+    NbSearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

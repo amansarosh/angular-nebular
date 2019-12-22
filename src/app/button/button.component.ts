@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NbPopoverDirective } from '@nebular/theme';
 
 @Component({
   selector: 'app-button',
@@ -8,13 +7,4 @@ import { NbPopoverDirective } from '@nebular/theme';
 })
 export class ButtonComponent {
 
-  @ViewChild(NbPopoverDirective, { static: false }) popover: NbPopoverDirective;
-
-  open() {
-    this.popover.show();
-  }
-
-  close() {
-    this.popover.hide();
-  }
 }
