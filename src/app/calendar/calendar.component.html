@@ -1,0 +1,74 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+        <!-- Insert header here -->
+        <h1>Home2</h1>
+        <div class="homebuttons">
+            <a href="/home" nbButton>Home1</a>
+            <a href="/icons" nbButton>Icons</a>
+            <a href="/spinner" nbButton>Spinner</a>
+            <a href="/chat" nbButton>Chat</a>
+            <a href="/calendar" nbButton>Calendar</a>
+
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+
+        <!------------------------------------------------------------------------------------------------------->
+        <h1 class="h5">Selected date: {{ date | date }}</h1>
+        <nb-calendar [(date)]="date">
+        </nb-calendar>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <h1 class="h5">Selected range: {{ range.start | date }} - {{ range.end | date }}</h1>
+        <nb-calendar-range [(range)]="range">
+        </nb-calendar-range>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <h1 class="h5">Selected date: {{ date | date }}</h1>
+        <nb-calendar [(date)]="date" [showHeader]="false">
+        </nb-calendar>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <h1 class="h5">Selected date: {{ date | date }}</h1>
+        <nb-calendar [(date)]="date" startView="month">
+        </nb-calendar>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <h1 class="h5">Selected date: {{ date | date }}</h1>
+        <nb-calendar [(date)]="date" size="large">
+        </nb-calendar>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <h1 class="h5">Selected date: {{ date | date }}</h1>
+        <nb-calendar [(date)]="date" [min]="min" [max]="max">
+        </nb-calendar>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <h1 class="h5">Selected date: {{ date | date }}</h1>
+        <nb-calendar [(date)]="date" [filter]="filter">
+        </nb-calendar>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <button (click)="toggleWeekNumber()" nbButton>
+            {{ this.showWeekNumber ? 'Hide' : 'Show' }} week number column
+        </button>
+
+        <nb-calendar [(date)]="date" [showWeekNumber]="showWeekNumber"></nb-calendar>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <h6>Created By Aman Sarosh and Styled With Nebula</h6>
+    </nb-layout-footer>
+</nb-layout>
