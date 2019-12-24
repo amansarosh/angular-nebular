@@ -10,7 +10,7 @@ import {
   NbTabsetModule, NbActionsModule, NbInputModule, NbButtonModule, NbRadioModule, NbSelectModule,
   NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, NbCheckboxModule,
   NbToggleModule, NbMenuModule, NbUserModule, NbToastrModule, NbWindowModule, NbSearchModule, NbAlertModule,
-  NbIconModule, NbSpinnerModule, NbProgressBarModule,
+  NbIconModule, NbSpinnerModule, NbProgressBarModule, NbBadgeModule,
 } from '@nebular/theme';
 
 
@@ -95,6 +95,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     NbIconModule,
     NbSpinnerModule,
     NbProgressBarModule,
+    NbBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
