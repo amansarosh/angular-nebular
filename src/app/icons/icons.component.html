@@ -1,0 +1,81 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+        <!-- Insert header here -->
+        <h1>Home2</h1>
+        <div class="homebuttons">
+            <a href="/home" nbButton>Home1</a>
+            <a href="/spinner" nbButton>Spinner</a>
+
+
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Normal Icons Examples</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <nb-icon icon="heart-outline"></nb-icon>
+                <nb-icon icon="star"></nb-icon>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Colored Icons Examples</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <nb-icon icon="heart-outline"></nb-icon>
+                <nb-icon icon="heart-outline" status="basic"></nb-icon>
+                <nb-icon icon="heart-outline" status="primary"></nb-icon>
+                <nb-icon icon="heart-outline" status="info"></nb-icon>
+                <nb-icon icon="heart-outline" status="success"></nb-icon>
+                <nb-icon icon="heart-outline" status="warning"></nb-icon>
+                <nb-icon icon="heart-outline" status="danger"></nb-icon>
+                <div class="control-status-example">
+                    <nb-icon icon="heart-outline" status="control"></nb-icon>
+                </div>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Annimated Icons Examples</nb-card-header>
+            <nb-card-body class="example-items-rows">
+
+                <nb-icon icon="alert-circle" [options]="{ animation: { type: 'zoom' } }"></nb-icon>
+                <nb-icon icon="activity" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+                <nb-icon icon="alert-triangle" [options]="{ animation: { type: 'shake' } }"></nb-icon>
+                <nb-icon icon="archive" [options]="{ animation: { type: 'flip in y' } }"></nb-icon>
+
+
+                <div class="control-status-example">
+                    <nb-icon icon="heart-outline" status="control"></nb-icon>
+                </div>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-header>Link To Icon Website</nb-card-header>
+            <nb-card-body>
+
+                <h1> <a href="https://akveo.github.io/eva-icons/#/?type=fill"> Eva Icon Website</a> </h1>
+
+            </nb-card-body>
+        </nb-card>
+        <!------------------------------------------------------------------------------------------------------->
+        <!-----------------<nb-icon icon="star" pack="font-awesome"></nb-icon>----------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+
+
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <h6>Created By Aman Sarosh and Styled With Nebula</h6>
+    </nb-layout-footer>
+</nb-layout>
