@@ -9,8 +9,11 @@ import {
   NbThemeModule, NbLayoutModule, NbCardModule, NbStepperModule, NbAccordionModule, NbListModule,
   NbTabsetModule, NbActionsModule, NbInputModule, NbButtonModule, NbRadioModule, NbSelectModule,
   NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, NbCheckboxModule,
-  NbToggleModule, NbMenuModule, NbUserModule, NbToastrModule, NbWindowModule, NbSearchModule
+  NbToggleModule, NbMenuModule, NbUserModule, NbToastrModule, NbWindowModule, NbSearchModule, NbAlertModule,
+  NbIconModule, NbSpinnerModule, NbProgressBarModule,
 } from '@nebular/theme';
+
+
 
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HomeComponent } from './home/home.component';
@@ -29,6 +32,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { ErrorComponent } from './error/error.component';
 import { ToastComponent } from './toast/toast.component';
 import { SearchComponent } from './search/search.component';
+import { AlertComponent } from './alert/alert.component';
+import { Home2Component } from './home2/home2.component';
+import { IconsComponent } from './icons/icons.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +56,10 @@ import { SearchComponent } from './search/search.component';
     ErrorComponent,
     ToastComponent,
     SearchComponent,
+    AlertComponent,
+    Home2Component,
+    IconsComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,7 +90,11 @@ import { SearchComponent } from './search/search.component';
     NbToggleModule,
     NbMenuModule,
     NbUserModule,
-    NbSearchModule
+    NbSearchModule,
+    NbAlertModule,
+    NbIconModule,
+    NbSpinnerModule,
+    NbProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

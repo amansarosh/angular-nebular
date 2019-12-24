@@ -16,10 +16,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { ErrorComponent } from './error/error.component';
 import { ToastComponent } from './toast/toast.component';
 import { SearchComponent } from './search/search.component';
+import { AlertComponent } from './alert/alert.component';
+import { Home2Component } from './home2/home2.component';
+import { IconsComponent } from './icons/icons.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'home2', component: Home2Component },
   { path: 'cards', component: CardsComponent },
   { path: 'stepper', component: StepperComponent },
   { path: 'accordion', component: AccordionComponent },
@@ -34,6 +39,9 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'toast', component: ToastComponent },
   { path: 'search', component: SearchComponent },
+  { path: 'alert', component: AlertComponent },
+  { path: 'icons', component: IconsComponent },
+  { path: 'spinner', component: SpinnerComponent },
   { path: '**', component: ErrorComponent }
 ];
 
