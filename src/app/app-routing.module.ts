@@ -20,6 +20,8 @@ import { AlertComponent } from './alert/alert.component';
 import { Home2Component } from './home2/home2.component';
 import { IconsComponent } from './icons/icons.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { ChatComponent } from './chat/chat.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 
 const routes: Routes = [
@@ -42,6 +44,8 @@ const routes: Routes = [
   { path: 'alert', component: AlertComponent },
   { path: 'icons', component: IconsComponent },
   { path: 'spinner', component: SpinnerComponent },
+  { path: 'chat', component: ChatComponent },
+  { path: 'calendar', component: CalendarComponent },
   { path: '**', component: ErrorComponent }
 ];
 

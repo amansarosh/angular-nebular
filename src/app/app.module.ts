@@ -10,7 +10,8 @@ import {
   NbTabsetModule, NbActionsModule, NbInputModule, NbButtonModule, NbRadioModule, NbSelectModule,
   NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, NbCheckboxModule,
   NbToggleModule, NbMenuModule, NbUserModule, NbToastrModule, NbWindowModule, NbSearchModule, NbAlertModule,
-  NbIconModule, NbSpinnerModule, NbProgressBarModule, NbBadgeModule,
+  NbIconModule, NbSpinnerModule, NbProgressBarModule, NbBadgeModule, NbChatModule, NbCalendarModule,
+  NbCalendarRangeModule,
 } from '@nebular/theme';
 
 
@@ -36,6 +37,8 @@ import { AlertComponent } from './alert/alert.component';
 import { Home2Component } from './home2/home2.component';
 import { IconsComponent } from './icons/icons.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { ChatComponent } from './chat/chat.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +63,8 @@ import { SpinnerComponent } from './spinner/spinner.component';
     Home2Component,
     IconsComponent,
     SpinnerComponent,
+    ChatComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
@@ -95,7 +100,10 @@ import { SpinnerComponent } from './spinner/spinner.component';
     NbIconModule,
     NbSpinnerModule,
     NbProgressBarModule,
-    NbBadgeModule
+    NbBadgeModule,
+    NbChatModule,
+    NbCalendarModule,
+    NbCalendarRangeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
