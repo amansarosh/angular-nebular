@@ -1,0 +1,230 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+        <!-- Insert header here -->
+        <h1>Home2</h1>
+        <div class="homebuttons">
+            <a href="/home" nbButton>Home1</a>
+            <a href="/icons" nbButton>Icons</a>
+
+
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card accent="danger" size="xsmall" [nbSpinner]="loading" nbSpinnerStatus="danger" nbSpinnerSize="large"
+            nbSpinnerMessage="">
+            <nb-card-header>Spinners</nb-card-header>
+            <nb-card-body>
+                <p>
+                    A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+                    Originally, nebula was a name for any diffuse astronomical object.
+                </p>
+                <button nbButton status="info" size="small" (click)="toggleLoadingAnimation()">Reload</button>
+
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-header>Spinner Colors</nb-card-header>
+            <nb-card [nbSpinner]="true" nbSpinnerStatus="basic">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card [nbSpinner]="true" nbSpinnerStatus="primary">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card [nbSpinner]="true" nbSpinnerStatus="warning">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card [nbSpinner]="true" nbSpinnerStatus="danger">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card [nbSpinner]="true" nbSpinnerStatus="success">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card [nbSpinner]="true" nbSpinnerStatus="info">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-header>Spinner Sizes</nb-card-header>
+
+            <nb-card [nbSpinner]="true" nbSpinnerSize="tiny" nbSpinnerStatus="primary">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card [nbSpinner]="true" nbSpinnerSize="small" nbSpinnerStatus="primary">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card [nbSpinner]="true" nbSpinnerSize="medium" nbSpinnerStatus="primary">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card [nbSpinner]="true" nbSpinnerSize="large" nbSpinnerStatus="primary">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card [nbSpinner]="true" nbSpinnerSize="giant" nbSpinnerStatus="primary">
+                <nb-card-body>
+                    Some card content.
+                </nb-card-body>
+            </nb-card>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Spinner Buttons</nb-card-header>
+            <nb-card-body class="example-items-rows">
+                <button [nbSpinner]="loading" nbSpinnerStatus="success" nbButton (click)="toggleLoadingAnimation()">
+                    Download
+                </button>
+
+                <button [nbSpinner]="loading" nbSpinnerStatus="warning" nbButton (click)="toggleLoadingAnimation()">
+                    Download
+                </button>
+
+                <button [nbSpinner]="loading" nbSpinnerStatus="danger" nbButton (click)="toggleLoadingAnimation()">
+                    Download
+                </button>
+
+                <button [nbSpinner]="loading" nbSpinnerStatus="info" nbButton (click)="toggleLoadingAnimation()">
+                    Download
+                </button>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card size="xsmall">
+            <nb-card-body>
+                <nb-tabset fullWidth (changeTab)="toggleLoadingAnimation()">
+                    <nb-tab tabTitle="Tab 1" [nbSpinner]="loading" nbSpinnerStatus="success" nbSpinnerSize="giant">
+                        <p>
+                            A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+                            Originally, nebula was a name for any diffuse astronomical object.
+                        </p>
+                    </nb-tab>
+
+                    <nb-tab tabTitle="Tab 2" [nbSpinner]="loading" nbSpinnerStatus="info" nbSpinnerSize="giant">
+                        <p>
+                            Nebular's primary goal is to assemble together and connect the most awesome features and
+                            libraries
+                            creating an efficient ecosystem to speed up and simplify the development.
+                        </p>
+                    </nb-tab>
+
+                </nb-tabset>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+        <h1 class="prog">Progress Bars</h1>
+        <!------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-header>Normal Progress Bar</nb-card-header>
+            <nb-card-body>
+                <nb-progress-bar [value]="40"></nb-progress-bar>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-header>Progress Bar Colors</nb-card-header>
+            <nb-card-body>
+                <nb-progress-bar [value]="20" status="basic">basic</nb-progress-bar>
+                <nb-progress-bar [value]="30" status="primary">primary</nb-progress-bar>
+                <nb-progress-bar [value]="50" status="info">info</nb-progress-bar>
+                <nb-progress-bar [value]="60" status="success">success</nb-progress-bar>
+                <nb-progress-bar [value]="70" status="warning">warning</nb-progress-bar>
+                <nb-progress-bar [value]="80" status="danger">danger</nb-progress-bar>
+                <div class="control-status-example">
+                    <nb-progress-bar [value]="90" status="control">control</nb-progress-bar>
+                </div>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+        <nb-card>
+            <nb-card-header>Progress Bar Size</nb-card-header>
+            <nb-card-body>
+                <nb-progress-bar [value]="20" size="tiny">tiny</nb-progress-bar>
+                <nb-progress-bar [value]="40" size="small">small</nb-progress-bar>
+                <nb-progress-bar [value]="60">medium</nb-progress-bar>
+                <nb-progress-bar [value]="80" size="large">large</nb-progress-bar>
+                <nb-progress-bar [value]="100" size="giant">giant</nb-progress-bar>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Progress Bar with Different Values</nb-card-header>
+            <nb-card-body>
+                <nb-progress-bar [value]="90" status="primary" [displayValue]="true"></nb-progress-bar>
+                <nb-progress-bar [value]="50" status="primary">Custom value</nb-progress-bar>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+
+        <nb-card>
+            <nb-card-header>Interactive Progress Bar</nb-card-header>
+            <nb-card-body>
+                <div class="container">
+                    <nb-actions size="medium">
+                        <nb-action icon="minus-outline" (click)="setValue(value - 25)"></nb-action>
+                    </nb-actions>
+                    <nb-progress-bar [value]="value" [status]="status" [displayValue]="true"></nb-progress-bar>
+                    <nb-actions size="medium">
+                        <nb-action icon="plus-outline" (click)="setValue(value + 25)"></nb-action>
+                    </nb-actions>
+                </div>
+            </nb-card-body>
+        </nb-card>
+
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <h6>Created By Aman Sarosh and Styled With Nebula</h6>
+    </nb-layout-footer>
+</nb-layout>

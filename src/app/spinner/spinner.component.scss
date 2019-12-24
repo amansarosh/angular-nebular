@@ -1,0 +1,21 @@
+.prog {
+    text-align: center;
+    text-decoration: underline;
+}
+
+nb-progress-bar ~ nb-progress-bar {
+  margin-top: 1rem;
+}
+
+.control-status-example {
+  margin-top: 1rem;
+}
+
+.container {
+      display: flex;
+      align-items: center;
+    }
+
+    nb-progress-bar {
+      flex: 1;
+    }
