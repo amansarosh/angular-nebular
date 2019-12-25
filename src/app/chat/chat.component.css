@@ -1,0 +1,14 @@
+::ng-deep nb-layout-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nb-chat {
+  width: 300px;
+  margin: 1rem;
+}
+/*# sourceMappingURL=chat.component.css.map */
