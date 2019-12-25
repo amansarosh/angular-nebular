@@ -11,7 +11,7 @@ import {
   NbPopoverModule, NbContextMenuModule, NbTooltipModule, NbSidebarModule, NbCheckboxModule,
   NbToggleModule, NbMenuModule, NbUserModule, NbToastrModule, NbWindowModule, NbSearchModule, NbAlertModule,
   NbIconModule, NbSpinnerModule, NbProgressBarModule, NbBadgeModule, NbChatModule, NbCalendarModule,
-  NbCalendarRangeModule,
+  NbCalendarRangeModule, NbTreeGridModule, 
 } from '@nebular/theme';
 
 
@@ -39,6 +39,7 @@ import { IconsComponent } from './icons/icons.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { ChatComponent } from './chat/chat.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { TreeComponent } from './tree/tree.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     SpinnerComponent,
     ChatComponent,
     CalendarComponent,
+    TreeComponent,
   ],
   imports: [
     BrowserModule,
@@ -104,6 +106,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     NbChatModule,
     NbCalendarModule,
     NbCalendarRangeModule,
+    NbTreeGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
