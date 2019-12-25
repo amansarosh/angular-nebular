@@ -1,0 +1,28 @@
+.prog {
+  text-align: center;
+  text-decoration: underline;
+}
+
+nb-progress-bar ~ nb-progress-bar {
+  margin-top: 1rem;
+}
+
+.control-status-example {
+  margin-top: 1rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nb-progress-bar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=spinner.component.css.map */
