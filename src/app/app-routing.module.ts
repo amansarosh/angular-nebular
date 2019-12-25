@@ -22,6 +22,7 @@ import { IconsComponent } from './icons/icons.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { ChatComponent } from './chat/chat.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { TreeComponent } from './tree/tree.component';
 
 
 const routes: Routes = [
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'spinner', component: SpinnerComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'calendar', component: CalendarComponent },
+  { path: 'tree', component: TreeComponent },
   { path: '**', component: ErrorComponent }
 ];
 
